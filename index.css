@@ -1,0 +1,43 @@
+:root {
+    --boardSize: 450px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px;
+    text-shadow: 0 0 3px white;
+}
+
+.board {
+    width: var(--boardSize);
+    height: var(--boardSize);
+    border: 2px solid black;
+    background-color: #111;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.cell:hover {
+    background-color: #141414;
+}
+
+.cell {
+    border-radius: 20px;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
